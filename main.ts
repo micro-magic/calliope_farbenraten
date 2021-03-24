@@ -19,6 +19,9 @@ function pruefe_Eingabe () {
     return true
 }
 /**
+ * Die Farben werden nacheinander mit der RGB-LED angezeigt.
+ */
+/**
  * Pin 0 - Pin 3:  Antwort-Farbkombination eingeben
  */
 input.onButtonPressed(Button.A, function () {
@@ -59,14 +62,10 @@ input.onPinPressed(TouchPin.P1, function () {
  * 
  * Die Farben werden über die Zahlen zufällig bestimmt und in einem Feld (engl.: array) 'farbliste' gespeichert.
  */
-/**
- * Die Farben werden nacheinander mit der RGB-LED angezeigt.
- */
 let antwortliste: number[] = []
 let farbliste: number[] = []
 let level = 0
 level = 0
-let alles_richtig = true
 farbliste = []
 antwortliste = []
 for (let index = 0; index < 8; index++) {
